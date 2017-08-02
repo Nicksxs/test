@@ -91,6 +91,11 @@
     .head .bdsharebuttonbox a.bds_qzone {
       background-position: -64px 0 !important; }
 
+@media (max-width: 500px) {
+  .head .brand {
+    width: 130px;
+    padding: 19px 20px; } }
+
 /*顶部导航栏*/
 /*侧边三个小按钮*/
 .side {
@@ -391,6 +396,9 @@
     @media screen and (max-width: 1199px) and (min-width: 768px) {
       .news .news-item + .news-item {
         margin-left: 20px; } }
+    @media (max-width: 500px) {
+      .news .news-item .media-object {
+        width: 100%; } }
     .news .news-item .media-body {
       margin: 12px 0 0 0; }
       @media (max-width: 979px) and (min-width: 768px) {
