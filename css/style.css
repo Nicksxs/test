@@ -94,7 +94,7 @@
 @media (max-width: 500px) {
   .head .brand {
     width: 130px;
-    padding: 19px 20px; } }
+    padding: 19px 20px 19px 0; } }
 
 /*顶部导航栏*/
 /*侧边三个小按钮*/
@@ -300,12 +300,23 @@
 /*banner*/
 .index-banner {
   height: auto !important; }
-  @media screen and (max-width: 979px) {
+  @media (max-width: 979px) {
     .index-banner {
       margin-top: 0; } }
+  @media (max-width: 500px) {
+    .index-banner {
+      height: 200px !important; } }
   .index-banner .swiper-wrapper,
   .index-banner .swiper-slide {
     height: auto !important; }
+    @media (max-width: 500px) {
+      .index-banner .swiper-wrapper,
+      .index-banner .swiper-slide {
+        height: 200px !important; } }
+    @media (max-width: 500px) {
+      .index-banner .swiper-wrapper img,
+      .index-banner .swiper-slide img {
+        height: 200px !important; } }
   .index-banner .pagination {
     position: absolute;
     z-index: 20;
