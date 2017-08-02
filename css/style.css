@@ -182,7 +182,7 @@
       height: 58px; }
       @media (max-width: 500px) {
         .foot .foot-content .consult .phone {
-          font-size: 16px; }
+          font-size: 15px; }
           .foot .foot-content .consult .phone img {
             width: 30px;
             margin-right: 8px !important; }
@@ -200,13 +200,13 @@
         position: absolute;
         right: 4px;
         top: 28px;
-        font-size: 14px; }
+        font-size: 12px; }
         @media (max-width: 979px) {
           .foot .foot-content .consult .phone .detail {
             left: 143px;
             right: auto; } }
     .foot .foot-content .consult .email {
-      font-size: 16px;
+      font-size: 15px;
       line-height: 43px;
       color: #fff; }
       @media (max-width: 500px) {
