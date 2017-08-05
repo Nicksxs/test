@@ -29,11 +29,11 @@
                     <a class="brand" href="#"><img src="images/logo.png"></a>
                     <div class="nav-collapse collapse clearfix">
                         <ul class="nav">
-                            <li class="active" data-url="default.html"><a href="#">关于我们</a></li>
+                            <li><a href="#">关于我们</a></li>
                             <li><a href="#">行业应用</a></li>
                             <li data-url="product.html"><a href="#">产品中心</a></li>
                             <li><a href="#">服务支持 </a></li>
-                            <li><a href="#">新闻活动</a></li>
+                            <li data-url="news.html"><a href="#">新闻活动</a></li>
                             <li><a href="#">联系我们</a></li>
                             <!-- <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
@@ -161,6 +161,9 @@
 <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
 <script src="https://cdn.bootcss.com/Swiper/2.7.0/idangerous.swiper.min.js"></script>
+<script src="js/query.js"></script>
+<script src="js/paging.js"></script>
+<script src="https://cdn.bootcss.com/Swiper/2.7.0/idangerous.swiper.min.js"></script>
 <!--[if lt IE 9]>
   <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -206,7 +209,38 @@ $(function(){
         });
 
     }
-
+    /*根据不同分辨率，首页载入不同的banner*/
+    function loadBanner(){
+        var width = $(window).width();
+        if(width < 1024){
+            $(".index-banner img").each(function(){
+                $(this).attr("src",$(this).data("ssrc"));
+            });
+        }else{
+            $(".index-banner img").each(function(){
+                $(this).attr("src",$(this).data("bsrc"));
+            });
+        }
+    }
+    //载入首页内容
+    function loadIndex() {
+        $(".main-content").load("default.html",function(response,status,xhr){
+            if(status){
+                var mySwiper = new Swiper('.swiper-container',{
+                    pagination : '.pagination',
+                    paginationClickable :true,
+                    autoplay : 5000,//可选选项，自动滑动
+                    loop : true,//可选选项，开启循环
+                    onSwiperCreated: function(swiper){
+                        loadBanner();
+                    }
+                })
+                $(window).resize(function () {
+                    loadBanner();
+                })
+            }
+        });
+    }
     /*载入产品详情页*/
     function loadProductDetail(){
         $(".detail-btns").on('click',function () {
@@ -237,16 +271,10 @@ $(function(){
     })
 
 
-    /*默认载入default.html页面*/
-    $(".main-content").load("default.html",function(response,status,xhr){
-        if(status){
-            var mySwiper = new Swiper('.swiper-container',{
-                pagination : '.pagination',
-                paginationClickable :true,
-                autoplay : 5000,//可选选项，自动滑动
-                loop : true,//可选选项，开启循环
-            })
-        }
+    /*默认载入首页*/
+    loadIndex();
+    $(".brand").click(function () {
+        loadIndex();
     });
 
     /*点击导航载入不同页面*/
@@ -260,20 +288,8 @@ $(function(){
 
         //载入default.html
         var url = $(this).data("url");
-        if(url == "default.html"){
-            $(".main-content").load(url,function(response,status,xhr){
-                if(status){
-                    var mySwiper = new Swiper('.swiper-container',{
-                        pagination : '.pagination',
-                        paginationClickable :true,
-                        autoplay : 5000,//可选选项，自动滑动
-                        loop : true,//可选选项，开启循环
-                    })
-                }
-            });
-        }
         //载入product.html
-        else if (url == "product.html"){
+        if (url == "product.html"){
             $(".main-content").load(url,function(response,status,xhr){
                 if(status){
                     /*让产品的选项卡在滚动到一定距离时固定在窗口顶部*/
@@ -327,6 +343,40 @@ $(function(){
                             loadProductDetail();
                         });
                         $(window).scrollTop(0);
+                    })
+                }
+            });
+        }
+        //载入news.html
+        else if (url == "news.html"){
+            $(".main-content").load(url,function(response,status,xhr){
+                if(status){
+                    function changeBanerSrc(){
+                        var width = $(window).width();
+                        if(width >= 1024){
+                            $(".news-banner").attr("src",$(".news-banner").data('bsrc'));
+                        }else{
+                            $(".news-banner").attr("src",$(".news-banner").data('ssrc'));
+                        }
+                    }
+                    changeBanerSrc();
+                    $(window).resize(function(){
+                        changeBanerSrc();
+                    });
+
+                    $('#myTab a').click(function (e) {
+                        e.preventDefault();
+                        $(this).tab('show');
+                    })
+                    $('#pageToolbar1').Paging({pagesize:10,count:85,toolbar:true});
+                    $('#pageToolbar2').Paging({pagesize:10,count:85,toolbar:true});
+                    
+                    
+                    //加载新闻详情页
+                    $(".media-body a").click(function () {
+                        $(".news-box .container.detail-container").load("news-detail.html",function () {
+
+                        });
                     })
                 }
             });
