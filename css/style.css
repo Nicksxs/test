@@ -373,6 +373,9 @@
   color: #ddd; }
 
 /*翻页条*/
+.navbar-inner {
+  border: none !important; }
+
 /*首页*/
 /*banner*/
 .index-banner {
