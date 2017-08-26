@@ -235,6 +235,27 @@ $(function(){
                         loadBanner();
                     }
                 })
+                $('#myCarousel').carousel({
+                    interval: 2000
+                })
+
+                $(".carouselTab li").click(function(){
+                    $(".carouselTab li").removeClass("active")
+                    $(this).addClass("active")
+                    var index = $(this).index()
+                    $('#myCarousel').carousel(index)
+                })
+                $('#myCarousel').on('slid.bs.carousel', function (obj) {
+                    var i = -1;
+                    $(obj.target).find(".item").each(function(index,item){
+                        if($(item).hasClass("active")){
+                            i = index
+                        }
+                    })
+                    $(".carouselTab li").removeClass("active").eq(i).addClass("active")
+                });
+
+
                 $(window).resize(function () {
                     loadBanner();
                 })

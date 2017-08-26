@@ -12,6 +12,9 @@
 /**
  * mixins
  */
+.default-color {
+  color: #3e3a39 !important; }
+
 @media screen and (min-width: 1250px) {
   .container,
   .navbar-static-bottom .container,
@@ -398,15 +401,207 @@
     background: #dc1e32; }
 
 /*banner*/
-.module .title {
-  font-size: 30px;
-  line-height: 98px;
-  color: #3e3a39;
-  text-align: center; }
-  .module .title a {
-    float: right;
+.service > .links {
+  background-color: #dc1e32; }
+
+.service .nav-tabs {
+  width: 100%;
+  border-bottom: none;
+  margin-bottom: 0; }
+  .service .nav-tabs li {
+    width: 25%;
+    border: none;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden; }
+    .service .nav-tabs li > img {
+      position: absolute;
+      right: 0;
+      top: 0; }
+    .service .nav-tabs li a {
+      background-color: none;
+      border: none;
+      border-radius: 0px;
+      padding: 27px 15px 27px;
+      cursor: default; }
+      .service .nav-tabs li a span {
+        /*float: left;*/
+        color: #3e3a39; }
+        .service .nav-tabs li a span.icon {
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          display: inline-block;
+          margin-right: 14px;
+          border: 1px solid #fff;
+          float: left; }
+          .service .nav-tabs li a span.icon img {
+            width: 100%; }
+        .service .nav-tabs li a span.name {
+          font-size: 18px;
+          line-height: 24px;
+          margin-top: 4px;
+          display: inline-block;
+          width: 200px;
+          text-align: left;
+          color: #fff; }
+          @media (max-width: 870px) {
+            .service .nav-tabs li a span.name {
+              font-size: 14px !important; } }
+          @media (max-width: 400px) {
+            .service .nav-tabs li a span.name {
+              font-size: 12px !important;
+              overflow: hidden;
+              /*超出部分隐藏*/
+              white-space: nowrap;
+              /*不换行*/
+              text-overflow: ellipsis;
+              /*超出部分文字以...显示*/ } }
+        .service .nav-tabs li a span.English {
+          font-size: 12px;
+          display: inline-block;
+          text-align: left;
+          color: #fff; }
+          @media (max-width: 870px) {
+            .service .nav-tabs li a span.English {
+              overflow: hidden;
+              /*超出部分隐藏*/
+              white-space: nowrap;
+              /*不换行*/
+              text-overflow: ellipsis;
+              /*超出部分文字以...显示*/ } }
+      .service .nav-tabs li a:hover, .service .nav-tabs li a:focus {
+        background-color: transparent;
+        border: none; }
+      @media (max-width: 1249px) {
+        .service .nav-tabs li a {
+          padding: 8px 0; }
+          .service .nav-tabs li a span {
+            float: none; }
+            .service .nav-tabs li a span.icon {
+              width: 36px;
+              height: 36px;
+              margin: 0 auto;
+              display: block;
+              float: none; }
+            .service .nav-tabs li a span.name {
+              display: block;
+              font-size: 16px;
+              width: auto;
+              text-align: center; }
+            .service .nav-tabs li a span.English {
+              display: block;
+              text-align: center; }
+          .service .nav-tabs li a .space {
+            display: none; } }
+
+.service > h2 {
+  font-size: 42px;
+  line-height: 42px;
+  color: #595757;
+  margin: 44px 0 20px 0;
+  text-align: center;
+  font-weight: normal; }
+  @media (max-width: 750px) {
+    .service > h2 {
+      font-size: 28px;
+      line-height: 36px;
+      color: #595757;
+      margin: 32px 0 10px 0; } }
+
+.service > h3 {
+  font-size: 22px;
+  line-height: 22px;
+  color: #595757;
+  margin: 0 0 38px 0;
+  text-align: center;
+  font-weight: lighter; }
+  @media (max-width: 750px) {
+    .service > h3 {
+      font-size: 16px;
+      line-height: 20px;
+      color: #595757;
+      margin: 0 0 22px 0; } }
+
+.service .carouselTab {
+  border: #c9caca solid 1px;
+  margin-bottom: 20px; }
+  .service .carouselTab li a:hover, .service .carouselTab li a:active {
+    background-color: #efefef !important;
+    cursor: pointer;
+    margin-right: 0; }
+  .service .carouselTab li.active a {
+    background-color: #efefef !important;
+    margin-right: 0; }
+  .service .carouselTab li.active .name {
+    color: #dc1e32 !important; }
+
+.service .carousel .carousel-caption {
+  background-color: #f1f1f1;
+  padding: 20px 42px; }
+  @media (max-width: 750px) {
+    .service .carousel .carousel-caption {
+      padding: 8px 16px; } }
+  .service .carousel .carousel-caption p {
     font-size: 14px;
-    line-height: 98px;
+    line-height: 22px;
+    color: #3e3a39; }
+    @media (max-width: 750px) {
+      .service .carousel .carousel-caption p {
+        font-size: 14px;
+        line-height: 18px;
+        color: #3e3a39; } }
+    .service .carousel .carousel-caption p a {
+      color: #dc1e32; }
+      .service .carousel .carousel-caption p a:hover {
+        text-decoration: none; }
+
+.service .carousel .carousel-control.left {
+  width: 70px;
+  height: 124px;
+  background: url("../images/arrows.png") no-repeat 0 -124px;
+  background-size: cover;
+  left: -120px;
+  border: none; }
+  @media (max-width: 1600px) {
+    .service .carousel .carousel-control.left {
+      width: 35px;
+      height: 62px;
+      left: 0;
+      background-position: 0 -62px; } }
+
+.service .carousel .carousel-control.right {
+  width: 70px;
+  height: 124px;
+  background: url("../images/arrows.png") no-repeat 0 0;
+  background-size: cover;
+  right: -120px;
+  border: none; }
+  @media (max-width: 1600px) {
+    .service .carousel .carousel-control.right {
+      width: 35px;
+      height: 62px;
+      right: 0; } }
+
+.module .title {
+  text-align: center;
+  position: relative; }
+  .module .title .topTitle {
+    font-size: 30px;
+    line-height: 56px;
+    color: #3e3a39;
+    margin-top: 21px; }
+  .module .title .subTitle {
+    font-size: 18px;
+    line-height: 28px;
+    color: #3e3a39;
+    margin-bottom: 30px; }
+  .module .title a {
+    position: absolute;
+    top: 21px;
+    right: 2px;
+    font-size: 14px;
+    line-height: 56px;
     color: #3e3a39; }
 
 @media screen and (max-width: 767px) {
@@ -417,10 +612,10 @@
   background: url("../images/market-activity-bg.png") no-repeat center;
   background-size: cover;
   color: #3e3a39; }
-  .market-activity .title {
+  .market-activity .title .topTitle, .market-activity .title .subTitle {
     color: #fff; }
-    .market-activity .title a {
-      color: #fff; }
+  .market-activity .title a {
+    color: #fff; }
   .market-activity .activity {
     background-color: #fff;
     text-align: center;
@@ -437,7 +632,13 @@
       line-height: 50px;
       margin: 4px 4% 0;
       text-align: left;
-      font-weight: normal; }
+      font-weight: normal;
+      overflow: hidden;
+      /*超出部分隐藏*/
+      white-space: nowrap;
+      /*不换行*/
+      text-overflow: ellipsis;
+      /*超出部分文字以...显示*/ }
     .market-activity .activity h3, .market-activity .activity p {
       font-size: 14px;
       line-height: 22px;
@@ -451,8 +652,8 @@
       .market-activity .activity:hover h2, .market-activity .activity:hover h3, .market-activity .activity:hover p, .market-activity .activity:hover p a {
         color: #fff; }
   @media screen and (min-width: 1367px) {
-    .market-activity .span4 {
-      width: 380px; } }
+    .market-activity .span3 {
+      width: 275px; } }
 
 .news {
   margin-bottom: 20px; }
@@ -1251,3 +1452,294 @@
   @media (max-width: 768px) {
     .news-box .detail-container .main {
       margin: 20px auto; } }
+
+/*行业应用*/
+.application .banner {
+  position: relative; }
+  .application .banner .content {
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    width: 1200px;
+    height: 79%;
+    margin-left: -600px; }
+    @media (max-width: 1600px) {
+      .application .banner .content {
+        top: 12%;
+        height: 80%; } }
+    @media (max-width: 1200px) {
+      .application .banner .content {
+        left: 0;
+        width: 100%;
+        margin-left: 0px; } }
+    @media (max-width: 1100px) {
+      .application .banner .content {
+        top: 8%;
+        height: 91%; } }
+    @media (max-width: 840px) {
+      .application .banner .content {
+        top: 6%;
+        height: 88%; } }
+    .application .banner .content h2 {
+      font-size: 60px;
+      line-height: 1;
+      color: #1f2229;
+      margin: 0 0 16px 0;
+      width: 100%; }
+      @media (max-width: 1100px) {
+        .application .banner .content h2 {
+          margin: 0 0 8px 0; } }
+      @media (max-width: 900px) {
+        .application .banner .content h2 {
+          font-size: 50px;
+          line-height: 1;
+          color: #1f2229; } }
+      @media (max-width: 768px) {
+        .application .banner .content h2 {
+          font-size: 40px;
+          line-height: 1;
+          color: #1f2229; } }
+      @media (max-width: 560px) {
+        .application .banner .content h2 {
+          font-size: 30px;
+          line-height: 1;
+          color: #1f2229;
+          margin-bottom: 6px; } }
+    .application .banner .content .target {
+      font-size: 30px;
+      line-height: 1;
+      color: #ca192b;
+      margin: 32px 0 20px 0; }
+      @media (max-width: 1400px) {
+        .application .banner .content .target {
+          margin: 16px 0 12px 0; } }
+      @media (max-width: 768px) {
+        .application .banner .content .target {
+          font-size: 24px;
+          line-height: 1;
+          color: #ca192b;
+          margin: 12px 0 8px 0; } }
+      @media (max-width: 560px) {
+        .application .banner .content .target {
+          font-size: 20px;
+          line-height: 1;
+          color: #ca192b;
+          margin: 8px 0 4px 0; } }
+      @media (max-width: 360px) {
+        .application .banner .content .target {
+          display: none; } }
+    .application .banner .content h4 {
+      font-size: 16px;
+      line-height: 1;
+      color: #666;
+      margin: 0;
+      font-weight: normal; }
+      @media (max-width: 560px) {
+        .application .banner .content h4.info {
+          display: none; } }
+    .application .banner .content .types.row {
+      position: absolute;
+      left: 10%;
+      bottom: 10%;
+      width: 80%;
+      margin-left: 0; }
+      @media (max-width: 1600px) {
+        .application .banner .content .types.row {
+          bottom: 4%; } }
+      @media (max-width: 1400px) {
+        .application .banner .content .types.row {
+          bottom: 0; } }
+      @media (max-width: 1100px) {
+        .application .banner .content .types.row {
+          bottom: 6%; } }
+      @media (max-width: 768px) {
+        .application .banner .content .types.row {
+          bottom: 4%; } }
+      @media (max-width: 560px) {
+        .application .banner .content .types.row {
+          bottom: 2%; } }
+      .application .banner .content .types.row .span2 {
+        margin: 0;
+        width: 16.6% !important;
+        float: left !important; }
+      .application .banner .content .types.row .icon {
+        width: 102px;
+        height: 102px;
+        background: url("../images/applications.png") no-repeat 0 0;
+        margin: 0 auto; }
+        .application .banner .content .types.row .icon.icon1 {
+          background-position: 0px 0; }
+        .application .banner .content .types.row .icon.icon2 {
+          background-position: -102px 0; }
+        .application .banner .content .types.row .icon.icon3 {
+          background-position: -204px 0; }
+        .application .banner .content .types.row .icon.icon4 {
+          background-position: -306px 0; }
+        .application .banner .content .types.row .icon.icon5 {
+          background-position: -408px 0; }
+        .application .banner .content .types.row .icon.icon6 {
+          background-position: -510px 0; }
+        @media (max-width: 1200px) {
+          .application .banner .content .types.row .icon {
+            width: 80px;
+            height: 80px;
+            background-size: cover; }
+            .application .banner .content .types.row .icon.icon1 {
+              background-position: 0px 0; }
+            .application .banner .content .types.row .icon.icon2 {
+              background-position: -80px 0; }
+            .application .banner .content .types.row .icon.icon3 {
+              background-position: -160px 0; }
+            .application .banner .content .types.row .icon.icon4 {
+              background-position: -240px 0; }
+            .application .banner .content .types.row .icon.icon5 {
+              background-position: -320px 0; }
+            .application .banner .content .types.row .icon.icon6 {
+              background-position: -400px 0; } }
+        @media (max-width: 768px) {
+          .application .banner .content .types.row .icon {
+            width: 50px;
+            height: 50px;
+            background-size: cover; }
+            .application .banner .content .types.row .icon.icon1 {
+              background-position: 0px 0; }
+            .application .banner .content .types.row .icon.icon2 {
+              background-position: -50px 0; }
+            .application .banner .content .types.row .icon.icon3 {
+              background-position: -100px 0; }
+            .application .banner .content .types.row .icon.icon4 {
+              background-position: -150px 0; }
+            .application .banner .content .types.row .icon.icon5 {
+              background-position: -200px 0; }
+            .application .banner .content .types.row .icon.icon6 {
+              background-position: -250px 0; } }
+        @media (max-width: 560px) {
+          .application .banner .content .types.row .icon {
+            width: 40px;
+            height: 40px; }
+            .application .banner .content .types.row .icon.icon1 {
+              background-position: 0px 0; }
+            .application .banner .content .types.row .icon.icon2 {
+              background-position: -40px 0; }
+            .application .banner .content .types.row .icon.icon3 {
+              background-position: -80px 0; }
+            .application .banner .content .types.row .icon.icon4 {
+              background-position: -120px 0; }
+            .application .banner .content .types.row .icon.icon5 {
+              background-position: -160px 0; }
+            .application .banner .content .types.row .icon.icon6 {
+              background-position: -200px 0; } }
+      .application .banner .content .types.row .title {
+        margin: 12px 0 0 0;
+        font-size: 24px;
+        line-height: 1;
+        color: #333; }
+        @media (max-width: 768px) {
+          .application .banner .content .types.row .title {
+            font-size: 18px;
+            line-height: 1;
+            color: #333; } }
+        @media (max-width: 560px) {
+          .application .banner .content .types.row .title {
+            font-size: 14px;
+            line-height: 1;
+            color: #333;
+            margin-top: 10px; } }
+
+.application .lists {
+  width: 86%;
+  margin: 12px auto 90px; }
+  @media (max-width: 768px) {
+    .application .lists {
+      margin: 12px auto 30px; } }
+  @media (max-width: 1199px) {
+    .application .lists {
+      width: 100%; } }
+  .application .lists .list {
+    background-color: #efefef;
+    position: relative; }
+    .application .lists .list + .list {
+      margin-top: 8px; }
+    .application .lists .list img {
+      height: 200px;
+      width: 500px; }
+      .application .lists .list img.pull-left {
+        margin: 8px 0 8px 16px; }
+      .application .lists .list img.pull-right {
+        margin: 8px 16px 8px 0; }
+    .application .lists .list .text {
+      width: 500px; }
+      .application .lists .list .text.pull-left {
+        margin: 71px 16px 8px 0; }
+      .application .lists .list .text.pull-right {
+        margin: 71px 0 8px 16px; }
+      .application .lists .list .text .title {
+        font-size: 30px;
+        line-height: 1;
+        color: #3e3a39;
+        margin-bottom: 30px; }
+      .application .lists .list .text .cnt {
+        font-size: 14px;
+        line-height: 1;
+        color: #3e3a39; }
+    @media (max-width: 1199px) {
+      .application .lists .list img {
+        height: 182px;
+        width: 454px; }
+      .application .lists .list .text {
+        width: 454px; }
+        .application .lists .list .text.pull-left {
+          margin: 62px 16px 8px 0; }
+        .application .lists .list .text.pull-right {
+          margin: 62px 0 8px 16px; } }
+    @media (max-width: 979px) {
+      .application .lists .list img {
+        height: 138px;
+        width: 346px; }
+      .application .lists .list .text {
+        width: 346px; }
+        .application .lists .list .text.pull-left {
+          margin: 40px 16px 8px 0; }
+        .application .lists .list .text.pull-right {
+          margin: 40px 0 8px 16px; } }
+    @media (max-width: 768px) {
+      .application .lists .list img {
+        height: auto;
+        width: 48%; }
+        .application .lists .list img.pull-left {
+          margin: 8px 0 8px 1%; }
+        .application .lists .list img.pull-right {
+          margin: 8px 1% 8px 0; }
+      .application .lists .list .text {
+        width: 48%;
+        position: absolute;
+        top: 50%;
+        text-align: center; }
+        .application .lists .list .text.pull-left {
+          left: 0;
+          margin-top: -30px;
+          margin-bottom: 8px;
+          margin-left: 1%;
+          margin-right: 0; }
+        .application .lists .list .text.pull-right {
+          right: 0;
+          margin-top: -30px;
+          margin-bottom: 8px;
+          margin-right: 1%;
+          margin-left: 0; }
+        .application .lists .list .text .title {
+          margin-bottom: 16px; } }
+  @media (max-width: 768px) and (max-width: 640px) {
+    .application .lists .list .text.pull-left {
+      margin-top: -20.5px; }
+    .application .lists .list .text.pull-right {
+      margin-top: -20.5px; }
+    .application .lists .list .text .title {
+      font-size: 16px;
+      margin-bottom: 5px; }
+    .application .lists .list .text .cnt {
+      font-size: 12px; } }
+
+@media (min-width: 1200px) {
+  .application .container, .application .navbar-static-top .container, .application .navbar-fixed-top .container, .application .navbar-fixed-bottom .container {
+    width: 1200px; } }
