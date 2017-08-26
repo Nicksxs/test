@@ -88,7 +88,7 @@
   .head .bdsharebuttonbox a {
     background-image: url("../images/share.png") !important;
     border-radius: 50%;
-    border: #fff solid 1px; }
+    border: #ddd solid 1px; }
     .head .bdsharebuttonbox a.bds_tsina {
       background-position: 0 0 !important; }
     .head .bdsharebuttonbox a.bds_weixin {
@@ -1241,7 +1241,7 @@
 
 .news-box .container .tab-content .activities {
   width: 86%;
-  margin: 0 auto; }
+  margin: 0 auto 44px; }
   .news-box .container .tab-content .activities .activity {
     border: #c9caca solid 1px;
     border-radius: 14px;
@@ -1334,21 +1334,20 @@
     .news-box .container .tab-content .activities {
       width: 100%; } }
 
-.news-box .container .tab-content .pager {
-  margin: 44px 0 0 0; }
-  .news-box .container .tab-content .pager ul {
-    margin-left: 0; }
-  @media (max-width: 700px) {
-    .news-box .container .tab-content .pager .ui-pager {
-      padding: 4px 6px; }
-    .news-box .container .tab-content .pager .ui-paging-container li.ui-paging-toolbar select {
-      height: 32px; }
-    .news-box .container .tab-content .pager .ui-paging-container li.ui-paging-toolbar input {
-      line-height: 30px;
-      height: 30px; }
-    .news-box .container .tab-content .pager .ui-paging-container li.ui-paging-toolbar a {
-      height: 30px;
-      line-height: 30px; } }
+.news-box .container .tab-content .pager ul {
+  margin-left: 0; }
+
+@media (max-width: 700px) {
+  .news-box .container .tab-content .pager .ui-pager {
+    padding: 4px 6px; }
+  .news-box .container .tab-content .pager .ui-paging-container li.ui-paging-toolbar select {
+    height: 32px; }
+  .news-box .container .tab-content .pager .ui-paging-container li.ui-paging-toolbar input {
+    line-height: 30px;
+    height: 30px; }
+  .news-box .container .tab-content .pager .ui-paging-container li.ui-paging-toolbar a {
+    height: 30px;
+    line-height: 30px; } }
 
 .news-box .detail-container .type-name {
   font-size: 22px;
