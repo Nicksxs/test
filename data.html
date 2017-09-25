@@ -428,7 +428,7 @@
             <h2>DS Jet 视频</h2>
             <h3>干冰清洁视频</h3>
             <div class="row">
-                <div class="span4">
+                <div class="span4" data-src="http://player.youku.com/embed/XMjk3NTMxMTY3Mg==">
                     <div class="media">
                         <a class="pull-left" href="#">
                             <img class="media-object" src="images/v1.png">
@@ -439,7 +439,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="span4">
+                <div class="span4" data-src="http://v.youku.com/v_show/id_XMzA0NDU0NzQ3Mg==">
                     <div class="media">
                         <a class="pull-left" href="#">
                             <img class="media-object" src="images/v1.png">
@@ -724,7 +724,6 @@
     <div class="bf">
         <div class="shade"></div>
         <div class="video">
-            <embed src="http://player.youku.com/embed/XMjk3NTMxMTY3Mg==" height="550" width="960">
             <div class="clsbtn"></div>
         </div>
     </div>
@@ -784,11 +783,11 @@ $(function(){
 
     /*打开关闭视屏播放*/
     $(".data .module .span4").click(function(){
-        $(".bf").show();
+        $(".bf").show().children(".video").append('<embed src="' + $(this).data("src") +'" height="550" width="960">')
         $("html,body").css("overflow","hidden")
     })
     $(".clsbtn").click(function(){
-        $(".bf").hide();
+        $(".bf").hide().children(".video").children("embed").remove();
         $("html,body").css("overflow","auto")
     })
 
