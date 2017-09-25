@@ -2178,6 +2178,141 @@
       display: inline-block;
       margin-bottom: 50px; } }
 
+.about .culture {
+  margin-bottom: 35px; }
+  .about .culture h3 {
+    font-size: 30px;
+    line-height: 1;
+    color: #3e3a39;
+    margin: 42px 0 56px 0;
+    font-weight: normal;
+    text-align: center; }
+    @media (max-width: 1024px) {
+      .about .culture h3 {
+        margin: 22px 0 36px 0; } }
+  .about .culture .span6 .text {
+    margin-top: 96px; }
+    @media (max-width: 1200px) {
+      .about .culture .span6 .text {
+        margin-top: 46px;
+        margin-left: 20px; } }
+    @media (max-width: 1000px) {
+      .about .culture .span6 .text {
+        margin-top: 16px;
+        margin-left: 20px; } }
+    .about .culture .span6 .text dl {
+      font-size: 30px;
+      line-height: 1;
+      color: #000; }
+      .about .culture .span6 .text dl dt {
+        font-size: 30px;
+        line-height: 1;
+        color: #000;
+        font-weight: lighter;
+        margin-bottom: 22px !important; }
+        @media (max-width: 1000px) {
+          .about .culture .span6 .text dl dt {
+            font-size: 24px;
+            line-height: 1;
+            color: #000;
+            margin-bottom: 16px !important; } }
+      .about .culture .span6 .text dl dd {
+        font-size: 16px;
+        line-height: 28px;
+        color: #000; }
+  @media (max-width: 768px) {
+    .about .culture .span6 img {
+      width: 100%; } }
+
+.service > .container {
+  margin: 0 auto 44px; }
+  .service > .container h3 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 1;
+    color: #3e3a39;
+    font-weight: normal;
+    margin-bottom: 50px;
+    margin-top: 40px; }
+    @media (max-width: 1200px) {
+      .service > .container h3 {
+        margin-bottom: 38px;
+        margin-top: 20px; } }
+    @media (max-width: 600px) {
+      .service > .container h3 {
+        margin-bottom: 28px;
+        margin-top: 14px;
+        font-size: 22px;
+        line-height: 1;
+        color: #3e3a39; } }
+  @media (min-width: 1367px) {
+    .service > .container .span3 {
+      width: 276px; } }
+  @media (max-width: 768px) {
+    .service > .container .span3 {
+      margin-bottom: 25px; } }
+  .service > .container .span3 > img {
+    width: 100%; }
+  .service > .container .span3 .cnt {
+    background-color: #dc1e32;
+    overflow: hidden;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: lighter;
+    height: 480px; }
+    @media (max-width: 1200px) {
+      .service > .container .span3 .cnt {
+        height: 520px; } }
+    @media (max-width: 1000px) {
+      .service > .container .span3 .cnt {
+        font-size: 12px;
+        line-height: 18px;
+        color: #fff;
+        height: 480px; } }
+    @media (max-width: 768px) {
+      .service > .container .span3 .cnt {
+        font-size: 18px;
+        line-height: 28px;
+        color: #fff;
+        height: auto;
+        padding-bottom: 35px; } }
+    @media (max-width: 500px) {
+      .service > .container .span3 .cnt {
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff; } }
+    .service > .container .span3 .cnt h4 {
+      font-size: 22px;
+      line-height: 1;
+      color: #fff;
+      font-weight: normal;
+      margin: 25px 0;
+      text-align: center; }
+      @media (max-width: 1000px) {
+        .service > .container .span3 .cnt h4 {
+          font-size: 19px;
+          line-height: 1;
+          color: #fff;
+          margin: 15px 0; } }
+      @media (max-width: 768px) {
+        .service > .container .span3 .cnt h4 {
+          font-size: 24px;
+          line-height: 1;
+          color: #fff;
+          margin: 25px 0; } }
+      @media (max-width: 500px) {
+        .service > .container .span3 .cnt h4 {
+          font-size: 20px;
+          line-height: 1;
+          color: #fff;
+          margin: 15px 0; } }
+    .service > .container .span3 .cnt dl dt {
+      font-weight: lighter; }
+  .service > .container .span3:hover .cnt {
+    background-color: #e33547; }
+
 .bf {
   position: fixed;
   top: 0;
