@@ -1770,10 +1770,10 @@
       margin-left: -600px; }
       .contact .banner .content .row {
         height: 100%; }
-        .contact .banner .content .row .span4 {
+        .contact .banner .content .row .span4, .contact .banner .content .row .span3, .contact .banner .content .row .span5 {
           position: relative;
           height: 100%; }
-          .contact .banner .content .row .span4:before {
+          .contact .banner .content .row .span4:before, .contact .banner .content .row .span3:before, .contact .banner .content .row .span5:before {
             content: '';
             position: absolute;
             right: 0;
@@ -1781,57 +1781,84 @@
             height: 260px;
             width: 1px;
             background-color: rgba(255, 255, 255, 0.3); }
-          .contact .banner .content .row .span4.last:before {
+          .contact .banner .content .row .span4.last:before, .contact .banner .content .row .span3.last:before, .contact .banner .content .row .span5.last:before {
             width: 0; }
-          .contact .banner .content .row .span4 div.text {
+          .contact .banner .content .row .span4 div.text, .contact .banner .content .row .span3 div.text, .contact .banner .content .row .span5 div.text {
             width: 90%;
             margin: 34px auto 0;
             font-size: 16px;
             line-height: 32px;
             color: #fff;
             text-align: left; }
-          .contact .banner .content .row .span4 .box {
-            width: 335px;
+          .contact .banner .content .row .span4 .box, .contact .banner .content .row .span3 .box, .contact .banner .content .row .span5 .box {
+            width: 235px;
             text-align: left; }
-            .contact .banner .content .row .span4 .box .title {
+            .contact .banner .content .row .span4 .box .title, .contact .banner .content .row .span3 .box .title, .contact .banner .content .row .span5 .box .title {
               font-size: 26px;
               line-height: 26px;
               color: #fff;
               margin-bottom: 40px; }
-            .contact .banner .content .row .span4 .box form input, .contact .banner .content .row .span4 .box form textarea, .contact .banner .content .row .span4 .box form button {
+            .contact .banner .content .row .span4 .box form input, .contact .banner .content .row .span4 .box form textarea, .contact .banner .content .row .span4 .box form button, .contact .banner .content .row .span3 .box form input, .contact .banner .content .row .span3 .box form textarea, .contact .banner .content .row .span3 .box form button, .contact .banner .content .row .span5 .box form input, .contact .banner .content .row .span5 .box form textarea, .contact .banner .content .row .span5 .box form button {
               background: none !important;
               color: #fff;
               border-color: #fff !important;
               border-radius: 8px; }
-            .contact .banner .content .row .span4 .box form input {
+            .contact .banner .content .row .span4 .box form input, .contact .banner .content .row .span3 .box form input, .contact .banner .content .row .span5 .box form input {
               width: 267px; }
-            .contact .banner .content .row .span4 .box form textarea {
+            .contact .banner .content .row .span4 .box form textarea, .contact .banner .content .row .span3 .box form textarea, .contact .banner .content .row .span5 .box form textarea {
               width: 100%; }
-            .contact .banner .content .row .span4 .box form button.btn {
+            .contact .banner .content .row .span4 .box form button.btn, .contact .banner .content .row .span3 .box form button.btn, .contact .banner .content .row .span5 .box form button.btn {
               padding: 4px 30px; }
-            .contact .banner .content .row .span4 .box ul {
+            .contact .banner .content .row .span4 .box ul, .contact .banner .content .row .span3 .box ul, .contact .banner .content .row .span5 .box ul {
               margin-left: 0; }
-              .contact .banner .content .row .span4 .box ul li {
+              .contact .banner .content .row .span4 .box ul li, .contact .banner .content .row .span3 .box ul li, .contact .banner .content .row .span5 .box ul li {
                 margin-bottom: 4px; }
-                .contact .banner .content .row .span4 .box ul li .icon {
+                .contact .banner .content .row .span4 .box ul li .icon, .contact .banner .content .row .span3 .box ul li .icon, .contact .banner .content .row .span5 .box ul li .icon {
                   display: inline-block;
                   width: 21px;
                   height: 24px;
                   background: url("../images/contact-icons.png") no-repeat 0 0;
                   vertical-align: middle;
                   margin-right: 6px; }
-                  .contact .banner .content .row .span4 .box ul li .icon.icon2 {
+                  .contact .banner .content .row .span4 .box ul li .icon.icon2, .contact .banner .content .row .span3 .box ul li .icon.icon2, .contact .banner .content .row .span5 .box ul li .icon.icon2 {
                     background-position: 0 -33px; }
-                  .contact .banner .content .row .span4 .box ul li .icon.icon3 {
+                  .contact .banner .content .row .span4 .box ul li .icon.icon3, .contact .banner .content .row .span3 .box ul li .icon.icon3, .contact .banner .content .row .span5 .box ul li .icon.icon3 {
                     background-position: 0 -67px; }
-                  .contact .banner .content .row .span4 .box ul li .icon.icon4 {
+                  .contact .banner .content .row .span4 .box ul li .icon.icon4, .contact .banner .content .row .span3 .box ul li .icon.icon4, .contact .banner .content .row .span5 .box ul li .icon.icon4 {
                     background-position: 0 -96px; }
-                  .contact .banner .content .row .span4 .box ul li .icon.icon5 {
+                  .contact .banner .content .row .span4 .box ul li .icon.icon5, .contact .banner .content .row .span3 .box ul li .icon.icon5, .contact .banner .content .row .span5 .box ul li .icon.icon5 {
                     background-position: 0 -131px; }
-                .contact .banner .content .row .span4 .box ul li span {
+                .contact .banner .content .row .span4 .box ul li span, .contact .banner .content .row .span3 .box ul li span, .contact .banner .content .row .span5 .box ul li span {
                   font-size: 16px;
                   line-height: 24px;
                   color: #fff; }
+        .contact .banner .content .row .span5 .box {
+          width: 400px; }
+        @media (max-width: 1200px) {
+          .contact .banner .content .row .span3 {
+            width: 190px; } }
+        @media (max-width: 1040px) {
+          .contact .banner .content .row .span3 {
+            width: 240px; } }
+        @media (max-width: 768px) {
+          .contact .banner .content .row .span3:before {
+            width: 0; } }
+        @media (max-width: 1200px) {
+          .contact .banner .content .row .span3 .box {
+            width: 190px; } }
+        .contact .banner .content .row .span3 .box form input, .contact .banner .content .row .span3 .box form textarea, .contact .banner .content .row .span3 .box form button {
+          background: none !important;
+          color: #fff;
+          border-color: #fff !important;
+          border-radius: 8px; }
+        .contact .banner .content .row .span3 .box form input, .contact .banner .content .row .span3 .box form textarea {
+          width: 100%; }
+          @media (max-width: 1200px) {
+            .contact .banner .content .row .span3 .box form input, .contact .banner .content .row .span3 .box form textarea {
+              width: 160px; } }
+          @media (max-width: 1050px) {
+            .contact .banner .content .row .span3 .box form input, .contact .banner .content .row .span3 .box form textarea {
+              width: 200px; } }
       @media (max-width: 1200px) {
         .contact .banner .content {
           position: absolute;
@@ -1839,9 +1866,7 @@
           top: 10%;
           height: 80%;
           width: 100%;
-          margin-left: 0; }
-          .contact .banner .content textarea {
-            width: 267px !important; } }
+          margin-left: 0; } }
       @media (max-width: 1040px) {
         .contact .banner .content {
           position: absolute;
@@ -1859,10 +1884,8 @@
               margin: 10px 0 0 0 !important; }
             .contact .banner .content .span4.first:before {
               background-color: transparent !important; }
-          .contact .banner .content .span4 {
-            margin-top: 15px; }
-          .contact .banner .content textarea, .contact .banner .content input {
-            width: 200px !important; } }
+          .contact .banner .content .span4, .contact .banner .content .span3, .contact .banner .content .span5 {
+            margin-top: 15px; } }
       @media (max-width: 900px) {
         .contact .banner .content .span4:before {
           height: 200px !important; }
@@ -1875,9 +1898,7 @@
           background-size: cover;
           padding: 0 15px; }
           .contact .banner .content .span4.first {
-            margin-top: 15px; }
-          .contact .banner .content .span4 input, .contact .banner .content .span4 textarea {
-            width: 100% !important; } }
+            margin-top: 15px; } }
   @media (min-width: 1200px) {
     .contact .container, .contact .navbar-static-top .container, .contact .navbar-fixed-top .container, .contact .navbar-fixed-bottom .container {
       width: 1200px; } }
@@ -2245,73 +2266,88 @@
         font-size: 22px;
         line-height: 1;
         color: #3e3a39; } }
-  @media (min-width: 1367px) {
-    .service > .container .span3 {
-      width: 276px; } }
-  @media (max-width: 768px) {
-    .service > .container .span3 {
-      margin-bottom: 25px; } }
-  .service > .container .span3 > img {
-    width: 100%; }
-  .service > .container .span3 .cnt {
-    background-color: #dc1e32;
-    overflow: hidden;
-    padding: 0 16px;
-    font-size: 14px;
-    line-height: 25px;
-    color: #fff;
-    font-weight: lighter;
-    height: 480px; }
+  .service > .container .span3 {
+    /*margin-left: 7px;
+      width: 232px;*/ }
+    @media (min-width: 1251px) {
+      .service > .container .span3 {
+        margin-left: 7px;
+        width: 300px; } }
+    @media (max-width: 1250px) {
+      .service > .container .span3 {
+        margin-left: 6px;
+        width: 294px; } }
     @media (max-width: 1200px) {
-      .service > .container .span3 .cnt {
-        height: 520px; } }
-    @media (max-width: 1000px) {
-      .service > .container .span3 .cnt {
-        font-size: 12px;
-        line-height: 18px;
-        color: #fff;
-        height: 480px; } }
+      .service > .container .span3 {
+        width: 234px; } }
+    @media (max-width: 980px) {
+      .service > .container .span3 {
+        width: 180px; } }
     @media (max-width: 768px) {
-      .service > .container .span3 .cnt {
-        font-size: 18px;
-        line-height: 28px;
-        color: #fff;
-        height: auto;
-        padding-bottom: 35px; } }
-    @media (max-width: 500px) {
-      .service > .container .span3 .cnt {
-        font-size: 16px;
-        line-height: 24px;
-        color: #fff; } }
-    .service > .container .span3 .cnt h4 {
-      font-size: 22px;
-      line-height: 1;
+      .service > .container .span3 {
+        width: 100%;
+        margin-bottom: 25px; } }
+    .service > .container .span3 > img {
+      width: 100%; }
+    .service > .container .span3 .cnt {
+      background-color: #dc1e32;
+      overflow: hidden;
+      padding: 0 16px;
+      font-size: 14px;
+      line-height: 25px;
       color: #fff;
-      font-weight: normal;
-      margin: 25px 0;
-      text-align: center; }
+      font-weight: lighter;
+      height: 480px; }
+      @media (max-width: 1200px) {
+        .service > .container .span3 .cnt {
+          height: 520px; } }
       @media (max-width: 1000px) {
-        .service > .container .span3 .cnt h4 {
-          font-size: 19px;
-          line-height: 1;
+        .service > .container .span3 .cnt {
+          font-size: 12px;
+          line-height: 18px;
           color: #fff;
-          margin: 15px 0; } }
+          height: 480px; } }
       @media (max-width: 768px) {
-        .service > .container .span3 .cnt h4 {
-          font-size: 24px;
-          line-height: 1;
+        .service > .container .span3 .cnt {
+          font-size: 18px;
+          line-height: 28px;
           color: #fff;
-          margin: 25px 0; } }
+          height: auto;
+          padding-bottom: 35px; } }
       @media (max-width: 500px) {
-        .service > .container .span3 .cnt h4 {
-          font-size: 20px;
-          line-height: 1;
-          color: #fff;
-          margin: 15px 0; } }
-    .service > .container .span3 .cnt dl dt {
-      font-weight: lighter; }
-  .service > .container .span3:hover .cnt {
-    background-color: #e33547; }
+        .service > .container .span3 .cnt {
+          font-size: 16px;
+          line-height: 24px;
+          color: #fff; } }
+      .service > .container .span3 .cnt h4 {
+        font-size: 22px;
+        line-height: 1;
+        color: #fff;
+        font-weight: normal;
+        margin: 25px 0;
+        text-align: center; }
+        @media (max-width: 1000px) {
+          .service > .container .span3 .cnt h4 {
+            font-size: 19px;
+            line-height: 1;
+            color: #fff;
+            margin: 15px 0; } }
+        @media (max-width: 768px) {
+          .service > .container .span3 .cnt h4 {
+            font-size: 24px;
+            line-height: 1;
+            color: #fff;
+            margin: 25px 0; } }
+        @media (max-width: 500px) {
+          .service > .container .span3 .cnt h4 {
+            font-size: 20px;
+            line-height: 1;
+            color: #fff;
+            margin: 15px 0; } }
+      .service > .container .span3 .cnt dl dt {
+        font-weight: lighter; }
+    .service > .container .span3:hover .cnt {
+      background-color: #e33547; }
 
 .bf {
   position: fixed;
@@ -2349,3 +2385,141 @@
       background: url("../images/closeVideo.png") no-repeat 0 0;
       z-index: 9999;
       cursor: pointer; }
+
+.banner {
+  position: relative; }
+  .banner .container.text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -600px; }
+    .banner .container.text h3 {
+      font-size: 50px;
+      line-height: 50px;
+      color: #dc1e32;
+      margin: 42px 0 0 25px;
+      font-weight: normal; }
+    .banner .container.text p {
+      font-size: 14px;
+      line-height: 24px;
+      color: #3e3a39;
+      margin: 25px 0 0 25px;
+      width: 456px; }
+      .banner .container.text p.phone {
+        width: auto;
+        margin-top: 45px;
+        font-size: 36px;
+        line-height: 1;
+        color: #000; }
+        .banner .container.text p.phone img {
+          vertical-align: middle;
+          margin-right: 14px; }
+    .banner .container.text .news_icon {
+      margin: 56px 0 0 172px; }
+      @media (max-width: 1200px) {
+        .banner .container.text .news_icon {
+          width: 210px;
+          margin-left: 130px; } }
+      @media (max-width: 980px) {
+        .banner .container.text .news_icon {
+          width: 210px;
+          margin: 66px 0 0 90px; } }
+      @media (max-width: 768px) {
+        .banner .container.text .news_icon {
+          width: 180px;
+          margin: 56px 0 0 70px; } }
+      @media (max-width: 640px) {
+        .banner .container.text .news_icon {
+          width: 150px;
+          margin: 56px 0 0 40px; } }
+      @media (max-width: 550px) {
+        .banner .container.text .news_icon {
+          width: 110px;
+          margin: 36px 0 0 30px; } }
+      @media (max-width: 400px) {
+        .banner .container.text .news_icon {
+          width: 80px;
+          margin: 20px 0 0 20px; } }
+    @media (max-width: 1250px) {
+      .banner .container.text {
+        margin-left: -585px; } }
+    @media (max-width: 1200px) {
+      .banner .container.text {
+        margin-left: -470px; } }
+    @media (max-width: 980px) {
+      .banner .container.text {
+        margin-left: -362px; } }
+    @media (max-width: 768px) {
+      .banner .container.text {
+        left: 0;
+        margin-left: 0; }
+        .banner .container.text h3 {
+          font-size: 30px;
+          line-height: 30px;
+          color: #dc1e32;
+          margin: 28px 0 0 25px;
+          font-weight: normal; }
+        .banner .container.text p {
+          font-size: 14px;
+          line-height: 20px;
+          color: #3e3a39;
+          margin: 15px 0 0 25px; }
+          .banner .container.text p.phone {
+            margin-top: 20px;
+            font-size: 24px;
+            line-height: 1;
+            color: #000; }
+            .banner .container.text p.phone img {
+              width: 60px; } }
+    @media (max-width: 640px) {
+      .banner .container.text h3 {
+        font-size: 30px;
+        line-height: 30px;
+        color: #dc1e32;
+        margin: 28px 0 0 25px;
+        font-weight: normal; }
+      .banner .container.text p {
+        font-size: 14px;
+        line-height: 20px;
+        color: #3e3a39;
+        width: 340px;
+        margin: 15px 0 0 25px; }
+        .banner .container.text p.phone {
+          font-size: 22px;
+          line-height: 1;
+          color: #000; }
+          .banner .container.text p.phone img {
+            width: 40px; } }
+    @media (max-width: 640px) {
+      .banner .container.text h3 {
+        font-size: 22px;
+        line-height: 22px;
+        color: #dc1e32;
+        margin: 18px 0 0 25px; }
+      .banner .container.text p {
+        font-size: 12px;
+        line-height: 18px;
+        color: #3e3a39;
+        width: auto;
+        margin-right: 25px; }
+        .banner .container.text p.phone {
+          font-size: 16px;
+          line-height: 1;
+          color: #000; }
+          .banner .container.text p.phone img {
+            width: 32px; } }
+    @media (max-width: 500px) {
+      .banner .container.text h3 {
+        margin: 18px 0 0 25px; }
+      .banner .container.text p {
+        font-size: 12px;
+        line-height: 18px;
+        color: #3e3a39;
+        margin-top: 10px; }
+        .banner .container.text p.phone {
+          font-size: 14px;
+          line-height: 1;
+          color: #000;
+          margin-top: 12px; }
+          .banner .container.text p.phone img {
+            width: 24px; } }
