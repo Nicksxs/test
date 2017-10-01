@@ -830,11 +830,13 @@
     text-align: center;
     height: auto !important;
     position: static !important;
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: auto !important; }
     .stickUp .floor > li.menuItem {
-      /*float: none;*/
+      float: none;
       display: inline-block;
-      cursor: pointer; }
+      cursor: pointer;
+      width: auto !important; }
       .stickUp .floor > li.menuItem.active {
         font-weight: bold; }
       .stickUp .floor > li.menuItem + li.menuItem a {
